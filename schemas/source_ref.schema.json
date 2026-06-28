@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://twave.local/schemas/source_ref.schema.json",
+  "title": "SourceRef",
+  "type": "object",
+  "required": ["gateway", "source_id"],
+  "additionalProperties": false,
+  "properties": {
+    "gateway": { "type": "string", "minLength": 1 },
+    "source_id": { "type": "string", "minLength": 1 },
+    "source_type": { "type": ["string", "null"] },
+    "url": { "type": ["string", "null"] },
+    "title": { "type": ["string", "null"] },
+    "last_seen": { "type": ["string", "null"] },
+    "metadata": { "type": "object", "additionalProperties": true, "default": {} }
+  }
+}

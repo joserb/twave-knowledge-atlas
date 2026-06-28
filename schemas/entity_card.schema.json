@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://twave.local/schemas/entity_card.schema.json",
+  "title": "EntityCard",
+  "type": "object",
+  "required": ["id", "type", "canonical_name"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "type": {
+      "type": "string",
+      "enum": [
+        "customer",
+        "contact",
+        "product",
+        "project",
+        "research_project",
+        "cycle",
+        "proposal",
+        "ticket",
+        "meeting",
+        "topic",
+        "decision",
+        "risk",
+        "supplier",
+        "process",
+        "document",
+        "quote",
+        "invoice"
+      ]
+    },
+    "canonical_name": { "type": "string", "minLength": 1 },
+    "aliases": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "summary": { "type": "string", "default": "" },
+    "known_in": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "best_tools": {
+      "type": "object",
+      "additionalProperties": { "type": "string" },
+      "default": {}
+    },
+    "source_refs": {
+      "type": "array",
+      "items": { "$ref": "source_ref.schema.json" },
+      "default": []
+    },
+    "relations": {
+      "type": "array",
+      "items": { "$ref": "relation.schema.json" },
+      "default": []
+    },
+    "last_seen": { "type": ["string", "null"] },
+    "last_updated": { "type": ["string", "null"] },
+    "confidence": { "type": "string", "enum": ["low", "medium", "high"], "default": "medium" },
+    "staleness": { "type": "string", "default": "unknown" },
+    "warnings": { "type": "array", "items": { "type": "string" }, "default": [] }
+  }
+}

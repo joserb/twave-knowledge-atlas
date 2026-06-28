@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+
+atlas/db/*.sqlite
+atlas/db/*.sqlite-shm
+atlas/db/*.sqlite-wal
+atlas/exports/*
+!atlas/exports/.gitkeep
