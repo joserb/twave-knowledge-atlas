@@ -9,3 +9,7 @@ atlas/db/*.sqlite-shm
 atlas/db/*.sqlite-wal
 atlas/exports/*
 !atlas/exports/.gitkeep
+
+# Páginas del vault generadas por build-vault (artefactos; se conservan los .gitkeep)
+atlas/vault/*.md
+atlas/vault/**/*.md
