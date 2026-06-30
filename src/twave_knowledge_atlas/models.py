@@ -23,6 +23,10 @@ ENTITY_TYPES = {
     "document",
     "quote",
     "invoice",
+    "organization",
+    "funding",
+    "deliverable",
+    "milestone",
 }
 
 

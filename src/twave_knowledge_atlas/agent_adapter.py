@@ -36,7 +36,10 @@ _MODULE_TO_TOOL = {
     "twave_odoo_gateway": "odoo-gateway",
     "odoo_gateway": "odoo-gateway",
     "odoo": "odoo-gateway",
-    "rnd_docs": "rnd-docs",
+    "twave_research_projects": "research-projects",
+    "research_projects": "research-projects",
+    "research": "research-projects",
+    "rnd_docs": "research-projects",
     "sgc_iso": "sgc-iso",
     "sgc": "sgc-iso",
 }

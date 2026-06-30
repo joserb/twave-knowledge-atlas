@@ -26,7 +26,11 @@
         "process",
         "document",
         "quote",
-        "invoice"
+        "invoice",
+        "organization",
+        "funding",
+        "deliverable",
+        "milestone"
       ]
     },
     "canonical_name": { "type": "string", "minLength": 1 },
